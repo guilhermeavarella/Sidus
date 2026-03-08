@@ -4,9 +4,9 @@ import isSmallScreen from "./utils/isSmallScreen";
 function App() {
   if (!isSmallScreen()) {
     return (
-      <div className="relative w-[30rem]">
+      <div className="relative w-[24rem]">
         <img src="/images/emulator.svg" alt="Emulator Frame" className="w-full pointer-events-none" />
-        <div className="absolute inset-0 flex items-start justify-center overflow-x-hidden pt-[4.787rem] pb-[3.025rem] px-[0.638rem]"> {/* Tons of magic numbers because it looks better this way ;) */}
+        <div className="absolute inset-0 flex items-start justify-center overflow-x-hidden pt-[3.82rem] pb-[2.42rem] px-[0.51rem]"> {/* Tons of magic numbers because it looks better this way ;) */}
           <Outlet />
         </div>
       </div>
