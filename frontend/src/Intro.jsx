@@ -1,24 +1,38 @@
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import isSmallScreen from "./utils/isSmallScreen"
 import { enterFullscreen } from "./utils/fullscreen"
 
+import AppIcon from "./components/AppIcon"
+
 function Intro() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    const items = Array(16).fill(false);
+    items[6] = true;
+
+    const handleClick = () => {
+        if (isSmallScreen()) enterFullscreen()
+        navigate("/home")
+    }
+
+    useEffect(() => {
+        setIsLoaded(true)
+    }, [])
+
+    if (!isSmallScreen()) {
+        return (
+            <AppIcon isActive={true} action={handleClick} isLoaded={isLoaded} />
+      )
+    }
 
     return (
-        <div>
-            <h1>Silly intro</h1>
-
-        <button 
-        className="p-3 bg-blue-500 rounded hover:bg-blue-600" 
-        onClick={() => {
-            if (isSmallScreen()) enterFullscreen()
-            navigate("/home")
-        }}
-        >
-            App
-        </button>
-    </div>
+        <div className="w-screen grid grid-cols-4 gap-5 items-center justify-center p-9">
+            {items.map((item, i) => (
+                <AppIcon key={i} isActive={item} action={handleClick} isLoaded={isLoaded} />
+            ))}
+        </div>
   )
 }
 
