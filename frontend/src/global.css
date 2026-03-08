@@ -32,7 +32,7 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  place-items: start;
   justify-content: center;
   min-width: 100dvw;
   min-height: 100dvh;
