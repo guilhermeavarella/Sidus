@@ -6,7 +6,7 @@ function App() {
     return (
       <div className="relative w-[24rem]">
         <img src="/images/emulator.svg" alt="Emulator Frame" className="w-full pointer-events-none" />
-        <div className="absolute inset-0 flex items-start justify-center overflow-x-hidden pt-[3.82rem] pb-[2.42rem] px-[0.51rem]"> {/* Tons of magic numbers because it looks better this way ;) */}
+        <div className="-z-1 absolute inset-0 flex items-start justify-center overflow-x-hidden pt-[3.82rem] px-[0.51rem] rounded-[4rem] bg-[var(--background-primary)]"> {/* Tons of magic numbers because it looks better this way ;) */}
           <Outlet />
         </div>
       </div>
