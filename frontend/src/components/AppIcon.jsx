@@ -1,3 +1,4 @@
+import isSmallScreen from "../utils/isSmallScreen.jsx"
 import iconVoid from "/icons/app-void.svg"
 import icon from "/icons/app.svg"
 
@@ -13,6 +14,22 @@ export default function AppIcon({ isActive = true, action, isLoaded = false }) {
                 <p>Other</p>
             </button>
     )
+
+    if (!isSmallScreen())
+        return (
+            <div className={`flex flex-col items-center justify-center transition-all duration-900 delay-450 ${
+                !isLoaded ? "blur-md" : "blur-none"
+            }`}
+            >
+                <button 
+                className="flex flex-col items-center justify-center drop-shadow-sm duration-500 ease-out hover:scale-115 active:scale-95 transition-all hover:cursor-pointer" 
+                onClick={action}
+                >
+                    <img src={icon} alt="App" className="w-[6rem]" />
+                    <p>Sidus</p>
+                </button>
+            </div>
+        )
 
     return (
         <button 
