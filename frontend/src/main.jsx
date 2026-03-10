@@ -6,7 +6,7 @@ import './global.css'
 
 import Intro from './Intro.jsx'
 import App from './App.jsx'
-import InitialLoad from './pages/IntialLoad.jsx'
+import InitialLoad from './pages/InitialLoad.jsx'
 import Welcome from './pages/Welcome.jsx'
 import Home from './pages/Home.jsx'
 

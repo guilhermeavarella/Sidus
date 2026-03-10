@@ -18,7 +18,9 @@ function Intro() {
     }
 
     useEffect(() => {
-        setIsLoaded(true)
+        setTimeout(() => {
+            setIsLoaded(true)
+        }, 10)
     }, [])
 
     if (!isSmallScreen()) {
