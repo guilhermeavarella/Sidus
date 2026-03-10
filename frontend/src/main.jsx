@@ -6,6 +6,8 @@ import './global.css'
 
 import Intro from './Intro.jsx'
 import App from './App.jsx'
+import InitialLoad from './pages/IntialLoad.jsx'
+import Welcome from './pages/Welcome.jsx'
 import Home from './pages/Home.jsx'
 
 const router = createBrowserRouter([
@@ -17,10 +19,13 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      {
-        path: "home",
-        element: <Home />,
-      },
+      // Authentication routes
+      { path: "load", element: <InitialLoad />, },
+      { path: "welcome", element: <Welcome />, },
+
+
+      // App routes 
+      { path: "home", element: <Home />, },
     ],
   },
 ])

@@ -14,7 +14,7 @@ function Intro() {
 
     const handleClick = () => {
         if (isSmallScreen()) enterFullscreen()
-        navigate("/home")
+        navigate("/load")
     }
 
     useEffect(() => {
