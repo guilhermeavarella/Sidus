@@ -66,20 +66,11 @@ a {
 }
 
 @media (min-width: 640px) {
-  :root {
-    font-size: 14px;
-  }
   
   body {
     display: flex;
     place-items: center;
     min-width: 100dvw;
     min-height: 100dvh;
-  }
-}
-
-@media (min-width: 1024px) {
-  :root {
-    font-size: 16px;
   }
 }

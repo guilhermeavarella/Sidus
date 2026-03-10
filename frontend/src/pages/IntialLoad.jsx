@@ -24,7 +24,7 @@ function InitialLoad() {
 
     return (
         <main 
-        className={`w-full h-full flex flex-col items-center justify-center pb-12 bg-[var(--background-primary)]
+        className={`w-full h-full flex flex-col items-center justify-center pb-16 bg-[var(--background-primary)]
         transition-all duration-1000 delay-500 ${
             !isLoaded ? "blur-xs opacity-0" : "blur-none opacity-100"
         }`}
