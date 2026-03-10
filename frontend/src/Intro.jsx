@@ -14,11 +14,13 @@ function Intro() {
 
     const handleClick = () => {
         if (isSmallScreen()) enterFullscreen()
-        navigate("/home")
+        navigate("/load")
     }
 
     useEffect(() => {
-        setIsLoaded(true)
+        setTimeout(() => {
+            setIsLoaded(true)
+        }, 10)
     }, [])
 
     if (!isSmallScreen()) {

@@ -25,8 +25,8 @@ export default function AppIcon({ isActive = true, action, isLoaded = false }) {
                 className="flex flex-col items-center justify-center drop-shadow-sm duration-500 ease-out hover:scale-115 active:scale-95 transition-all hover:cursor-pointer" 
                 onClick={action}
                 >
-                    <img src={icon} alt="App" className="w-[6rem]" />
-                    <p>Sidus</p>
+                    <img src={icon} alt="App" className="w-[8rem]" />
+                    <p className="text-xl">Sidus</p>
                 </button>
             </div>
         )

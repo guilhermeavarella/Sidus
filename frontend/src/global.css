@@ -43,43 +43,35 @@ body {
 h1 {
   font-size: 2rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h3 {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 a {
   font-size: 1rem;
   font-weight: 600;
   color: #FFBAF7;
+  text-align: center;
   text-decoration: underline;
 }
 
 @media (min-width: 640px) {
-  :root {
-    font-size: 14px;
-  }
   
   body {
     display: flex;
     place-items: center;
     min-width: 100dvw;
     min-height: 100dvh;
-  }
-}
-
-@media (min-width: 1024px) {
-  :root {
-    font-size: 16px;
   }
 }
