@@ -23,7 +23,7 @@ function useLogin() {
     // Mocked up version
     const login = async (username, password) => {
         if (username && password) {
-            localStorage.setItem("token", "mocked-token");
+            await localStorage.setItem("token", "mocked-token");
             setError(null);
         } else {
             setError("Invalid username or password.");
