@@ -9,20 +9,18 @@ function Login() {
     const navigate = useNavigate();
     const { login: handleLogin, error } = useLogin();
     
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
+        if (e) e.preventDefault()
+
         const form = document.getElementById("loginForm")
         const formData = new FormData(form)
         const username = formData.get("username")
         const password = formData.get("password")
 
-        await handleLogin(username, password)
-    };
+        const valid = await handleLogin(username, password)
 
-    useEffect(() => {
-        if (!error && isLoggedIn()) {
-            navigate("/home");
-        }
-    }, [error]);
+        if (valid) navigate("/home")
+    };
 
     return (
         <main className="w-full h-full flex flex-col items-center justify-start gap-4 p-4 pb-16">
