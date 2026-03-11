@@ -12,21 +12,26 @@ function useLogin() {
     /*
     const login = async (username, password) => {
         try {
-            const response = await api.post("/auth/login", { username, password });
-            localStorage.setItem("token", response.data.token);
-            setError(null);
+            const response = await api.post("/auth/login", { username, password })
+            localStorage.setItem("token", response.data.token)
+            setError(null)
+            return true
         } catch (err) {
-            setError(err.response?.data?.message || "An error occurred during Login.");
+            setError(err.response?.data?.message || "An error occurred during Login.")
+            return false
         }
-    }; */
+    };
+    */
 
     // Mocked up version
     const login = async (username, password) => {
         if (username && password) {
-            await localStorage.setItem("token", "mocked-token");
-            setError(null);
+            localStorage.setItem("token", "mocked-token")
+            setError(null)
+            return true
         } else {
-            setError("Invalid username or password.");
+            setError("Invalid username or password.")
+            return false
         }
     };
 
@@ -34,7 +39,7 @@ function useLogin() {
 }
 
 function logout() {
-    localStorage.removeItem("token");
+    localStorage.removeItem("token")
 }
 
 function useRegister() {
@@ -43,10 +48,12 @@ function useRegister() {
     /*
     const register = async (step, {data}) => {
         try {
-            await api.post("/auth/register", {step, data});
-            setError(null);
+            await api.post("/auth/register", {step, data})
+            setError(null)
+            return true
         } catch (err) {
-            setError(err.response?.data?.message || "An error occurred during Registration.");
+            setError(err.response?.data?.message || "An error occurred during Registration.")
+            return false
         }
     }; */
 
@@ -54,32 +61,39 @@ function useRegister() {
     const register = async (step, {data}) => {
         switch (step) {
             case 1:
-                if (data.firstName && data.lastName && data.id)
+                if (data.firstName && data.lastName && data.id) {
                     setError(null)
-                else 
-                    setError("Step 1 error.");
-                break;
+                    return true
+                } else {
+                    setError("Step 1 error.")
+                    return false
+                }
 
             case 2:
-                if (data.country && data.address && data.city && data.state && data.zipCode && data.email)
-                    setError(null);
-                else
-                    setError("Step 2 error.");
-                break;
+                if (data.country && data.address && data.city && data.state && data.zipCode && data.email) {
+                    setError(null)
+                    return true
+                } else {
+                    setError("Step 2 error.")
+                    return false
+                }
 
             case 3:
-                if (data.password)
-                    setError(null);
-                else
-                    setError("Step 3 error.");
-                break;
+                if (data.password) {
+                    setError(null)
+                    return true
+                } else {
+                    setError("Step 3 error.")
+                    return false
+                }
                 
             default:
-                setError("Step error.");
+                setError("Invalid step.")
+                return false
         }
     };
 
-    return { register, error };
+    return { register, error }
 }
 
 export { isLoggedIn, useLogin, logout, useRegister };
