@@ -1,22 +1,21 @@
+import { useState } from "react"
 import { Outlet } from "react-router-dom"
-import isSmallScreen from "./utils/isSmallScreen"
 
-import frame from "/images/emulator.svg"
+import NavItem from "./components/NavItem.jsx"
 
 function App() {
-  if (!isSmallScreen()) {
-    return (
-      <div className="relative w-[32rem]">
-        <div className="z-0 absolute inset-0 flex items-start justify-center overflow-x-hidden pt-[5.1rem] px-[0.68rem] rounded-[5.3rem] bg-[var(--background-primary)]"> {/* Tons of magic numbers because it looks better this way ;) */}
-          <Outlet />
-        </div>
-        <img src={frame} alt="Emulator Frame" className="z-10 relative w-full pointer-events-none" />
-      </div>
-    );
-  }
-  
+  const [activeTab, setActiveTab] = useState("home")
+
+  const navItems = ["Home", "Wallet", "Services", "Support"]
+
   return (
-    <div className="w-[100dvw] h-[100dvh] flex items-start justify-center overflow-x-hidden overflow-y-scroll">
+    <div className="w-full h-full flex items-start justify-center p-4 pb-24">
+      <section className="absolute bottom-16 flex items-center justify-center bg-white/25 backdrop-blur-sm rounded-full px-6 py-4 gap-9">
+        {navItems.map((item) => (
+          <NavItem key={item} label={item} isActive={activeTab === item.toLowerCase()} />
+        ))}
+      </section>
+
       <Outlet />
     </div>
   )
