@@ -41,9 +41,9 @@ function useRegister() {
     const [error, setError] = useState(null);
     
     /*
-    const register = async (username, password) => {
+    const register = async (step, {data}) => {
         try {
-            await api.post("/auth/register", { username, password });
+            await api.post("/auth/register", {step, data});
             setError(null);
         } catch (err) {
             setError(err.response?.data?.message || "An error occurred during Registration.");
@@ -51,11 +51,31 @@ function useRegister() {
     }; */
 
     // Mocked up version
-    const register = async (username, password) => {
-        if (username && password) {
-            setError(null);
-        } else {
-            setError("Username and password are required.");
+    const register = async (step, {data}) => {
+        switch (step) {
+            case 1:
+                if (data.firstName && data.lastName && data.id)
+                    setError(null)
+                else 
+                    setError("Step 1 error.");
+                break;
+
+            case 2:
+                if (data.country && data.address && data.city && data.state && data.zipCode && data.email)
+                    setError(null);
+                else
+                    setError("Step 2 error.");
+                break;
+
+            case 3:
+                if (data.password)
+                    setError(null);
+                else
+                    setError("Step 3 error.");
+                break;
+                
+            default:
+                setError("Step error.");
         }
     };
 
