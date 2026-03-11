@@ -9,6 +9,7 @@ import App from './App.jsx'
 import InitialLoad from './pages/InitialLoad.jsx'
 import Welcome from './pages/Welcome.jsx'
 import Home from './pages/Home.jsx'
+import Login from './pages/Login.jsx'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       // Authentication routes
       { path: "load", element: <InitialLoad />, },
       { path: "welcome", element: <Welcome />, },
+      { path: "login", element: <Login />, },
 
 
       // App routes 
