@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './global.css'
 
 import Intro from './Intro.jsx'
+import Emulator from './Emulator.jsx'
 import App from './App.jsx'
 import InitialLoad from './pages/InitialLoad.jsx'
 import Welcome from './pages/Welcome.jsx'
@@ -17,9 +18,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Intro />,
   },
+
   {
     path: "/",
-    element: <App />,
+    element: <Emulator />,
     children: [
       // Authentication routes
       { path: "load", element: <InitialLoad />, },
@@ -27,9 +29,14 @@ const router = createBrowserRouter([
       { path: "login", element: <Login />, },
       { path: "register", element: <Register />, },
 
-
-      // App routes 
-      { path: "home", element: <Home />, },
+      // App routes
+      { path: "app", 
+        element: <App />,
+        children: [
+          { path: "home", element: <Home />, },
+          
+        ]
+      },
     ],
   },
 ])
