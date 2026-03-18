@@ -9,9 +9,10 @@ import Emulator from './Emulator.jsx'
 import App from './App.jsx'
 import InitialLoad from './pages/InitialLoad.jsx'
 import Welcome from './pages/Welcome.jsx'
-import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
+import Home from './pages/Home.jsx'
+import Account from './pages/Account.jsx'
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
           { path: "home", element: <Home />, },
-          
+          { path: "account", element: <Account />, },
         ]
       },
     ],
