@@ -1,0 +1,24 @@
+{
+    "hasUnread": true,
+    "latest": 3,
+    "notifications": [
+        {
+            "id": 1,
+            "message": "Your password was changed successfully.",
+            "date": "2024-06-01T10:00:00Z",
+            "isRead": true
+        },
+        {
+            "id": 2,
+            "message": "Your account information has been updated.",
+            "date": "2024-06-02T14:30:00Z",
+            "isRead": true
+        },
+        {
+            "id": 3,
+            "message": "Latest news on currency exchange rates and market trends.",
+            "date": "2024-06-03T09:15:00Z",
+            "isRead": false
+        }
+    ]
+}
