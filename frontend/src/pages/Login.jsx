@@ -19,7 +19,7 @@ function Login() {
 
         const valid = await handleLogin(username, password)
 
-        if (valid) navigate("/home")
+        if (valid) navigate("/app/home")
     };
 
     return (
