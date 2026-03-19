@@ -19,6 +19,12 @@
             "image": "currencyalerts.jpg"
         }
     ],
+
+    "categories": [
+        "International Insurances",
+        "Travel & Mobility",
+        "Partnerships"
+    ],
     
     "International Insurances": [
         {
