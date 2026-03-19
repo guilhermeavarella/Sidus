@@ -1,0 +1,76 @@
+{
+    "questions": [
+        {
+            "question": "What is Sidus?",
+            "answer": "Sidus is a global financial platform that lets you send money internationally, manage balances in multiple currencies, and trade between currencies—all from a single, simple app."
+        },
+        {
+            "question": "How does Sidus work?",
+            "answer": "Sidus connects global payment infrastructure with a modern mobile platform, allowing you to send money, hold different currencies, and convert between them quickly and securely."
+        },
+        {
+            "question": "Can I send money to any country?",
+            "answer": "Yes. Sidus enables international transfers across a wide range of countries and currencies, allowing you to send money worldwide directly from the app."
+        },
+        {
+            "question": "Which currencies does Sidus support?",
+            "answer": "Sidus supports multiple global currencies. You can hold balances in different currencies and transfer between them within the app. Check your wallet to view your balance in each currency"
+        },
+        {
+            "question": "Can I convert money between currencies inside the app?",
+            "answer": "Yes. Sidus allows you to trade between currencies instantly, so you can convert your balance whenever you need."
+        },
+        {
+            "question": "Does Sidus include a multi-currency wallet?",
+            "answer": "Yes. Your Sidus wallet can hold balances in multiple currencies, making it easy to manage international payments and exchanges."
+        },
+        {
+            "question": "How fast are international transfers with Sidus?",
+            "answer": "Most transfers are processed within seconds, depending on the destination, currency, and payment method used."
+        },
+        {
+            "question": "Is Sidus secure?",
+            "answer": "Security is a priority. Sidus uses modern encryption, secure authentication, and monitoring systems to protect your account and transactions."
+        },
+        {
+            "question": "Do I need a bank account to use Sidus?",
+            "answer": "No. Sidus does not require any bank account or other payment methods to fund transfers and manage your balances."
+        },
+        {
+            "question": "Can I receive money through Sidus?",
+            "answer": "Yes. Sidus allows you to receive funds and keep them in your multi-currency wallet or convert them into another currency."
+        },
+        {
+            "question": "Are there fees for transfers or currency exchanges?",
+            "answer": "Sidus maintains transparent pricing. Any fees or exchange rates are shown clearly before you confirm a transaction."
+        },
+        {
+            "question": "How do I start using Sidus?",
+            "answer": "Simply download the app, create an account, verify your identity, and start sending or managing money globally."
+        },
+        {
+            "question": "Can I manage multiple currencies at the same time?",
+            "answer": "Yes. Your Sidus wallet can hold and manage several currencies simultaneously, making international transactions easier."
+        },
+        {
+            "question": "Can I send money between my own currency balances?",
+            "answer": "Yes. You can convert between currencies within your wallet whenever you want."
+        },
+        {
+            "question": "Is Sidus suitable for international travelers?",
+            "answer": "Yes. With multi-currency balances and quick currency conversion, Sidus is designed to make managing money abroad simple."
+        },
+        {
+            "question": "Can businesses use Sidus?",
+            "answer": "Sidus is designed to support individuals and may expand services for businesses and global payments in the future."
+        },
+        {
+            "question": "What happens if I need help with a transaction?",
+            "answer": "Sidus provides customer support directly through the app to help resolve any issues with transfers or account management."
+        },
+        {
+            "question": "Why choose Sidus instead of traditional international transfers?",
+            "answer": "Sidus removes the complexity of traditional banking transfers by providing a faster, simpler, and more transparent way to move money globally."
+        }
+    ]
+}

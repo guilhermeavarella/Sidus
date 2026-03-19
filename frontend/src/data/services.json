@@ -1,0 +1,101 @@
+{
+    "highlights": [
+        {
+            "name": "International Gadget Insurance",
+            "description": "Insurance coverage for personal electronic devices such as smartphones and laptops against theft, damage, or loss during international travel.",
+            "action": "",
+            "image": "gadget.jpg"
+        },
+        {
+            "name": "Real-Time Travel Expense Tracking",
+            "description": "A tool that categorizes and tracks travel spending across multiple currencies to help users manage their travel budgets.",
+            "action": "",
+            "image": "travel.jpg"
+        },
+        {
+            "name": "Destination Currency Alerts",
+            "description": "A notification system that alerts users about favorable exchange rates for currencies related to their travel destinations.",
+            "action": "",
+            "image": "currencyalerts.jpg"
+        }
+    ],
+    
+    "International Insurances": [
+        {
+            "name": "International Travel Insurance",
+            "description": "Short-term travel coverage that protects users against medical emergencies, trip disruptions, and unexpected incidents while traveling abroad.",
+            "icon": "travel.svg"
+        },
+        {
+            "name": "International Gadget Insurance",
+            "description": "Insurance coverage for personal electronic devices such as smartphones and laptops against theft, damage, or loss during international travel.",
+            "icon": "gadget.svg"
+        },
+        {
+            "name": "Freelancer Liability Insurance",
+            "description": "Professional liability coverage designed for freelancers and remote workers operating internationally, protecting against claims related to services provided.",
+            "icon": "freelance.svg"
+        }
+    ],
+    
+    "Travel & Mobility": [
+        {
+            "name": "Airport Lounge Access Subscriptions",
+            "description": "Subscription-based access to airport lounges worldwide, providing travelers with comfortable waiting areas, Wi-Fi, and amenities before flights.",
+            "icon": "lounge.svg"
+        },
+        {
+            "name": "International Travel Booking",
+            "description": "A service that allows users to search, book, and pay for flights and hotels globally using their Sidus wallet.",
+            "icon": "booking.svg"
+        },
+        {
+            "name": "Local Transportation Passes",
+            "description": "Digital passes for metro, train, bus, or city mobility systems that travelers can purchase directly within the app.",
+            "icon": "passes.svg"
+        },
+        {
+            "name": "Car Rental Booking",
+            "description": "A platform to search, reserve, and pay for rental vehicles in cities around the world using the Sidus wallet.",
+            "icon": "car.svg"
+        },
+        {
+            "name": "Real-Time Travel Expense Tracking",
+            "description": "A tool that categorizes and tracks travel spending across multiple currencies to help users manage their travel budgets.",
+            "icon": "expense.svg"
+        },
+        {
+            "name": "Travel Rewards and Cashback",
+            "description": "A rewards program that offers cashback or points on international payments, travel bookings, and foreign currency spending.",
+            "icon": "cashback.svg"
+        },
+        {
+            "name": "Destination Currency Alerts",
+            "description": "A notification system that alerts users about favorable exchange rates for currencies related to their travel destinations.",
+            "icon": "alerts.svg"
+        }
+    ],
+  
+    "Partnerships": [
+        {
+            "name": "International Travel Booking",
+            "description": "A service that allows users to search, book, and pay for flights and hotels worldwide directly through the Sidus app using their wallet balances.",
+            "icon": "company.svg"
+        },
+        {
+            "name": "Local Transportation Passes",
+            "description": "Digital passes for metro, train, bus, and other urban mobility systems that users can purchase and store within the Sidus app.",
+            "icon": "company.svg"
+        },
+        {
+            "name": "Global eSIM Data Plans",
+            "description": "Mobile data plans that users can activate instantly while traveling abroad, providing internet connectivity without needing a physical SIM card.",
+            "icon": "company.svg"
+        },
+        {
+            "name": "Health Insurance",
+            "description": "International health coverage plans that provide medical protection for travelers, expatriates, and global workers.",
+            "icon": "company.svg"
+        }
+    ]
+}
