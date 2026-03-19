@@ -14,6 +14,7 @@ import Register from './pages/Register.jsx'
 import Home from './pages/Home.jsx'
 import Account from './pages/Account.jsx'
 import Services from './pages/Services.jsx'
+import Support from './pages/Support.jsx'
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,8 @@ const router = createBrowserRouter([
           { path: "home", element: <Home />, },
           { path: "account", element: <Account />, },
           
-          { path: "services", element: <Services />, }
+          { path: "services", element: <Services />, },
+          { path: "support", element: <Support />, }
         ]
       },
     ],
