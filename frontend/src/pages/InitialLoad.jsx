@@ -17,7 +17,7 @@ function InitialLoad() {
     useEffect(() => {
         setTimeout(() => {
             if (isLoggedIn())
-                navigate("/home")
+                navigate("/app/home")
             else
                 navigate("/welcome")
         }, 5000)
