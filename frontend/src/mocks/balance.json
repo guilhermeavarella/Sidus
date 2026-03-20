@@ -1,4 +1,5 @@
 {
+  "totalBalance": 12345.67,
   "balances": [
     { "currency": "BRL", "balance": 505.22 },
     { "currency": "USD", "balance": 100.00 },
