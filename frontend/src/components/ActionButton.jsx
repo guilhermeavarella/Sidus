@@ -7,7 +7,7 @@ function ActionButton({ variant, action, label }) {
         );
     } else if (variant === 'selected') {
         return (
-            <button className="h-12 px-8 bg-[var(--background-secondary)] text-[var(--content-primary)] font-semibold rounded-full gap-2 hover:cursor-pointer snap-start border border-[var(--brand-secondary)]"> 
+            <button className="h-12 px-8 bg-[var(--background-secondary)] text-[var(--content-primary)] font-semibold rounded-full gap-2 hover:cursor-pointer snap-start border-3 border-[var(--brand-secondary)]"> 
                 {label}
             </button>
         );
