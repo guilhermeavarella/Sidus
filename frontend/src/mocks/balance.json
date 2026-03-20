@@ -1,4 +1,37 @@
-{   
-    "currency": "R$",
-    "balance": 505.22
+{
+  "balances": [
+    { "currency": "BRL", "balance": 505.22 },
+    { "currency": "USD", "balance": 100.00 },
+    { "currency": "EUR", "balance": 87.45 },
+    { "currency": "JPY", "balance": 13250.00 },
+    { "currency": "BGN", "balance": 320.10 },
+    { "currency": "CZK", "balance": 2150.75 },
+    { "currency": "DKK", "balance": 980.40 },
+    { "currency": "GBP", "balance": 76.30 },
+    { "currency": "HUF", "balance": 29800.00 },
+    { "currency": "PLN", "balance": 410.60 },
+    { "currency": "RON", "balance": 355.90 },
+    { "currency": "SEK", "balance": 1120.50 },
+    { "currency": "CHF", "balance": 92.15 },
+    { "currency": "ISK", "balance": 13450.00 },
+    { "currency": "NOK", "balance": 1045.70 },
+    { "currency": "HRK", "balance": 670.25 },
+    { "currency": "RUB", "balance": 8900.00 },
+    { "currency": "TRY", "balance": 2750.80 },
+    { "currency": "AUD", "balance": 145.20 },
+    { "currency": "CAD", "balance": 132.90 },
+    { "currency": "CNY", "balance": 720.00 },
+    { "currency": "HKD", "balance": 810.35 },
+    { "currency": "IDR", "balance": 1250000.00 },
+    { "currency": "ILS", "balance": 365.40 },
+    { "currency": "INR", "balance": 8400.00 },
+    { "currency": "KRW", "balance": 158000.00 },
+    { "currency": "MXN", "balance": 1850.75 },
+    { "currency": "MYR", "balance": 420.60 },
+    { "currency": "NZD", "balance": 160.45 },
+    { "currency": "PHP", "balance": 5600.00 },
+    { "currency": "SGD", "balance": 138.20 },
+    { "currency": "THB", "balance": 4750.90 },
+    { "currency": "ZAR", "balance": 2100.30 }
+  ]
 }

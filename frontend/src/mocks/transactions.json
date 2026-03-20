@@ -1,0 +1,49 @@
+{
+    "transactions": [
+        {
+            "id": 1,
+            "date": "2024-06-01",
+            "originCurrency": "BRL",
+            "destinyCurrency": "USD",
+            "description": "Payment to John Doe",
+            "amount": "R$ 1,505.22",
+            "type": "sent"
+        },
+        {
+            "id": 2,
+            "date": "2024-06-02",
+            "originCurrency": "USD",
+            "destinyCurrency": "USD",
+            "description": "Grocery Shopping",
+            "amount": "US$ 9.99",
+            "type": "sent"
+        },
+        {
+            "id": 3,
+            "date": "2024-06-03",
+            "originCurrency": "EUR",
+            "destinyCurrency": "JPY",
+            "description": "Salary from Company XYZ",
+            "amount": "¥ 183.00",
+            "type": "received"
+        },
+        {
+            "id": 4,
+            "date": "2024-06-04",
+            "originCurrency": "USD",
+            "destinyCurrency": "BRL",
+            "description": "Freelance Project Payment",
+            "amount": "R$ 75.20",
+            "type": "received"
+        },
+        {
+            "id": 5,
+            "date": "2024-06-05",
+            "originCurrency": "USD",
+            "destinyCurrency": "BRL",
+            "description": "Sidus app direct currency conversion",
+            "amount": "R$ 12.00",
+            "type": "trade"
+        }
+    ]
+}
