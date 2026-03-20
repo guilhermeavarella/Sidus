@@ -9,7 +9,6 @@ function Home() {
     const navigate = useNavigate()
     const [isHidden, setIsHidden] = useState(false)
     const [balance, setBalance] = useState(0)
-    const [currency, setCurrency] = useState("$")
     const [exchangeRate, setExchangeRate] = useState()
     const [value1, setValue1] = useState()
     const [value2, setValue2] = useState()
@@ -58,8 +57,7 @@ function Home() {
         const response = fetch("/src/mocks/balance.json")
         response.then(res => res.json())
         .then( data => {
-            setBalance(data.balance),
-            setCurrency(data.currency)
+            setBalance(data.totalBalance)
         })
         .catch(error => console.error("Error fetching data:", error))
     }
@@ -94,7 +92,7 @@ function Home() {
                 <div className="flex flex-col items-start justify-center gap-2">
                     <p>Total balance</p>
                     <div className="flex items-center justify-center gap-2">
-                        <p className="text-2xl font-bold">{currency}</p>
+                        <p className="text-2xl font-bold">$</p>
                         <h1>{ isHidden ? " - - - -" : `${balance.toFixed(2)}` }</h1>    
                     </div>
                 </div>
