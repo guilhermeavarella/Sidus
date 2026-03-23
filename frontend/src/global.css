@@ -3,7 +3,7 @@
 :root {
   font-family: "Instrument Sans", system-ui;
   line-height: 1.5;
-  font-size: 12px;
+  font-size: clamp(12px, 2vw + 0.3em, 16px);
   font-weight: 400;
 
   color: #FFFFFF;
@@ -76,6 +76,9 @@ a {
 }
 
 @media (min-width: 640px) {
+  :root {
+    font-size: 12px;
+  }
   
   body {
     display: flex;

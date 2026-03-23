@@ -156,9 +156,16 @@ function Register() {
                 <Button variant="primary" label="Continue" action={handleSubmit} />
             </section>
             <section className="w-full flex flex-row gap-3 items-center justify-center">
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
+                {steps.map((_, index) => (
+                    <img
+                        key={index}
+                        src={ index + 1 === currentStep
+                            ? "/icons/step-current.svg"
+                            : "/icons/step.svg"
+                        }
+                        className="h-4"
+                    />
+                ))}
             </section>
         </main>
     )
