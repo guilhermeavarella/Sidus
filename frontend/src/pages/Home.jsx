@@ -127,7 +127,7 @@ function Home() {
                     <h2 className="indent-8 text-[var(--content-secondary)]">Reach anywhere <br/>in seconds.</h2>
                     <h2 className="text-end text-[var(--brand-secondary)]">Make it <b>global </b><br/>your way</h2>
                 </div>
-                <img src="/images/aroundtheworld.png" alt="world" className="-z-10 w-104 absolute -right-40 -mt-4 select-none" />
+                <img src="/images/aroundtheworld.png" alt="world" className="w-104 absolute -right-40 -mt-4 select-none" />
             </section>
 
             <section className="w-full flex flex-col items-center justify-start gap-6 pb-64">
