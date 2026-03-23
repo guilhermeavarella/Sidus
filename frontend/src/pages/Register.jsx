@@ -158,6 +158,7 @@ function Register() {
             <section className="w-full flex flex-row gap-3 items-center justify-center">
                 {steps.map((_, index) => (
                     <img
+                        key={index}
                         src={ index + 1 === currentStep
                             ? "/icons/step-current.svg"
                             : "/icons/step.svg"
