@@ -13,7 +13,7 @@ function Intro() {
     items[6] = true;
 
     const handleClick = () => {
-        if (isSmallScreen()) document.documentElement.requestFullscreen();
+        if (isSmallScreen()) enterFullscreen()
         navigate("/load")
     }
 
