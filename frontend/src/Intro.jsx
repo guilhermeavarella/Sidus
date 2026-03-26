@@ -12,9 +12,11 @@ function Intro() {
     const items = Array(16).fill(false);
     items[6] = true;
 
-    const handleClick = () => {
-        if (isSmallScreen()) enterFullscreen()
-        navigate("/load")
+    const handleClick = async () => {
+        if (isSmallScreen()) await enterFullscreen()
+        setTimeout(() => {
+            navigate("/load")
+        }, 1000)
     }
 
     useEffect(() => {
