@@ -1,5 +1,5 @@
 function enterFullscreen(element = document.documentElement) {
-  if (element.requestFullscreen || !document.fullscreenElement) {
+  if (element.requestFullscreen) {
     element.requestFullscreen();
   }
 }

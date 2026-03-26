@@ -12,8 +12,8 @@ function Intro() {
     const items = Array(16).fill(false);
     items[6] = true;
 
-    const handleClick = () => {
-        if (isSmallScreen()) enterFullscreen()
+    const handleClick = async () => {
+        if (isSmallScreen()) await enterFullscreen()
         navigate("/load")
     }
 
