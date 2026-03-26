@@ -13,10 +13,8 @@ function Intro() {
     items[6] = true;
 
     const handleClick = () => {
-        if (isSmallScreen()) enterFullscreen()
-        setTimeout(() => {
-            navigate("/load")
-        }, 1000)
+        if (isSmallScreen()) document.documentElement.requestFullscreen();
+        navigate("/load")
     }
 
     useEffect(() => {
@@ -36,7 +34,6 @@ function Intro() {
             {items.map((item, i) => (
                 <AppIcon key={i} isActive={item} action={handleClick} isLoaded={isLoaded} />
             ))}
-            <p> {window.innerWidth} {window.innerWidth < 640} </p>
         </div>
   )
 }
