@@ -1,8 +1,6 @@
 function enterFullscreen(element = document.documentElement) {
   if (element.requestFullscreen) {
-    setTimeout(() => {
-      element.requestFullscreen();
-    }, 1000);
+    element.requestFullscreen();
   }
 }
 
@@ -12,4 +10,8 @@ function exitFullscreen() {
   }
 }
 
-export { enterFullscreen, exitFullscreen };
+function isFullscreen() {
+  return document.fullscreenElement != null;
+}
+
+export { enterFullscreen, exitFullscreen, isFullscreen };
