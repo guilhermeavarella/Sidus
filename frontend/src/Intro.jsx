@@ -36,6 +36,7 @@ function Intro() {
             {items.map((item, i) => (
                 <AppIcon key={i} isActive={item} action={handleClick} isLoaded={isLoaded} />
             ))}
+            <p> {window.innerWidth} {window.innerWidth < 640} </p>
         </div>
   )
 }
