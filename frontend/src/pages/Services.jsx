@@ -36,7 +36,7 @@ function Services() {
                 {servicesData.categories.map((category, index) => (
                     <section className="w-full flex flex-col items-start justify-start mt-12 overflow-visible" key={index}>
                         <h4 key={index} className="text-xl font-bold mb-4">{category}</h4>
-                        <div className="flex flex-row items-center justify-start gap-4 pl-4 pr-12 overflow-x-scroll -mx-4 scroll-pl-4 snap-x no-scrollbar">
+                        <div className="max-w-[calc(100%+2rem)] flex flex-row items-center justify-start gap-4 pl-4 pr-48 overflow-x-scroll -mx-4 scroll-pl-4 snap-x no-scrollbar">
                             {servicesData[category].map((service, index) => (
                                 <div key={index} className="min-h-84 max-h-84 min-w-72 max-w-72 flex flex-col justify-between bg-[var(--background-secondary)] p-6 rounded-3xl snap-start">
                                     <div className="flex flex-col items-start gap-1">
