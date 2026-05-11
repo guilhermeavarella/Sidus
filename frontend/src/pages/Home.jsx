@@ -4,6 +4,7 @@ import ActionButton from "@components/ActionButton"
 import LongButton from "@components/LongButton"
 import { currencies, convertCurrency } from "@services/freecurrency"
 
+import balanceMock from "@mocks/balance.json"
 
 function Home() {
     const navigate = useNavigate()
@@ -54,12 +55,7 @@ function Home() {
 
     // mocked up version
     const fetchData = () => {
-        const response = fetch("/src/mocks/balance.json")
-        response.then(res => res.json())
-        .then( data => {
-            setBalance(data.totalBalance)
-        })
-        .catch(error => console.error("Error fetching data:", error))
+        setBalance(balanceMock.totalBalance)
     }
 
     useEffect(() => {

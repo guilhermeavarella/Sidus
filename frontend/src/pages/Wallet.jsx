@@ -3,6 +3,9 @@ import HomeButton from "@components/HomeButton"
 import ActionButton from "@components/ActionButton"
 import { currencies } from "@services/freecurrency"
 
+import balanceMock from "@mocks/balance.json"
+import transactionsMock from "@mocks/transactions.json"
+
 function Wallet() {
     const [isHidden, setIsHidden] = useState(false)
     const [selectedCurrency, setSelectedCurrency] = useState('BRL')
@@ -25,19 +28,9 @@ function Wallet() {
 
     // mocked up version
     const fetchData = () => {
-        const balance = fetch("@mocks/balance.json")
-        console.log(balance)
-        balance.then(res => res.json())
-        .then( data => {
-            setBalances(data.balances)
-            setSelectedBalance(data.balances.find(b => b.currency === selectedCurrency).balance)
-        })
-
-        const transactions = fetch("@mocks/transactions.json")
-        transactions.then(res => res.json())
-        .then( data => {
-            setTransactions(data.transactions)
-        })
+        setBalances(balanceMock.balances)
+        setSelectedBalance(balanceMock.balances.find(b => b.currency === selectedCurrency).balance)
+        setTransactions(transactionsMock.transactions)
     }
 
     useEffect(() => {
