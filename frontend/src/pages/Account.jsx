@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { logout } from "../utils/authentication"
-import BackButton from "../components/BackButton"
+import { logout } from "@utils/authentication"
+import BackButton from "@components/BackButton"
 
 function Account() {
     const navigate = useNavigate()

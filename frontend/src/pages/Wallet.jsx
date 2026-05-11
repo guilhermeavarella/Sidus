@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
-import HomeButton from "../components/HomeButton"
-import ActionButton from "../components/ActionButton"
-import { currencies } from "../services/freecurrency"
+import HomeButton from "@components/HomeButton"
+import ActionButton from "@components/ActionButton"
+import { currencies } from "@services/freecurrency"
 
 function Wallet() {
     const [isHidden, setIsHidden] = useState(false)
@@ -25,14 +25,15 @@ function Wallet() {
 
     // mocked up version
     const fetchData = () => {
-        const balance = fetch("/src/mocks/balance.json")
+        const balance = fetch("@mocks/balance.json")
+        console.log(balance)
         balance.then(res => res.json())
         .then( data => {
             setBalances(data.balances)
             setSelectedBalance(data.balances.find(b => b.currency === selectedCurrency).balance)
         })
 
-        const transactions = fetch("/src/mocks/transactions.json")
+        const transactions = fetch("@mocks/transactions.json")
         transactions.then(res => res.json())
         .then( data => {
             setTransactions(data.transactions)

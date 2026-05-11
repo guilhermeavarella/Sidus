@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { isLoggedIn } from "../utils/authentication"
+import { isLoggedIn } from "@utils/authentication"
 
 import logo from "/logos/white-global.svg"
 

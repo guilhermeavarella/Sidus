@@ -1,7 +1,7 @@
 import { useState } from "react"
-import HomeButton from "../components/HomeButton.jsx"
-import supportData from "../data/support.json"
-import FAQuestion from "../components/FAQuestion.jsx"
+import HomeButton from "@components/HomeButton.jsx"
+import supportData from "@data/support.json"
+import FAQuestion from "@components/FAQuestion.jsx"
 
 function Support() {
     const [searchTerm, setSearchTerm] = useState("")

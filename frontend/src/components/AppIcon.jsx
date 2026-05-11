@@ -1,4 +1,4 @@
-import isSmallScreen from "../utils/isSmallScreen.jsx"
+import isSmallScreen from "@utils/isSmallScreen.jsx"
 import iconVoid from "/icons/app-void.svg"
 import icon from "/icons/app.svg"
 

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import ActionButton from "../components/ActionButton"
-import LongButton from "../components/LongButton"
-import { currencies, convertCurrency } from "../services/freecurrency"
+import ActionButton from "@components/ActionButton"
+import LongButton from "@components/LongButton"
+import { currencies, convertCurrency } from "@services/freecurrency"
 
 
 function Home() {
