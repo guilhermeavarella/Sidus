@@ -1,8 +1,8 @@
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { useLogin, isLoggedIn } from "../utils/authentication"
-import Button from "../components/LongButton"
-import BackButton from "../components/BackButton";
+import { useLogin, isLoggedIn } from "@utils/authentication"
+import Button from "@components/LongButton"
+import BackButton from "@components/BackButton";
 
 
 function Login() {

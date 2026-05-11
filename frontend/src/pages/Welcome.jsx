@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import Button from "../components/LongButton"
+import Button from "@components/LongButton"
 
 function Welcome() {
     const navigate = useNavigate();

@@ -1,5 +1,5 @@
-import HomeButton from "../components/HomeButton.jsx"
-import servicesData from "../data/services.json"
+import HomeButton from "@components/HomeButton.jsx"
+import servicesData from "@data/services.json"
 
 function Services() {
     return (

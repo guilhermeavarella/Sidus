@@ -1,4 +1,4 @@
-import api from "../services/api.jsx";
+import api from "@services/api.jsx";
 import { useState } from "react";
 
 function isLoggedIn() {

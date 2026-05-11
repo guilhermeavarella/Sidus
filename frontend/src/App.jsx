@@ -4,7 +4,7 @@ import { isFullscreen } from "./utils/fullscreen"
 import NavItem from "./components/NavItem.jsx"
 
 function App() {
-  const [activeTab, setActiveTab] = useState("home")
+  const [activeTab, setActiveTab] = useState(window.location.pathname.split("/app/")[1] || "home")
 
   const navItems = ["Home", "Wallet", "Services", "Support"]
 

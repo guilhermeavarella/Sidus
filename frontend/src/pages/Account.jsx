@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { logout } from "../utils/authentication"
-import BackButton from "../components/BackButton"
+import { logout } from "@utils/authentication"
+import BackButton from "@components/BackButton"
+
+import userMock from "@mocks/user.json"
+import notificationsMock from "@mocks/notifications.json"
 
 function Account() {
     const navigate = useNavigate()
@@ -44,22 +47,12 @@ function Account() {
     
     // mocked up version
     const fetchData = () => {
-
-        const userData = fetch("/src/mocks/user.json")
-        userData.then(res => res.json())
-        .then( data => {
-            setFirstName(data.firstName),
-            setLastName(data.lastName)
-        })
-
-        const userNotifications = fetch("/src/mocks/notifications.json")
-        userNotifications.then(res => res.json())
-        .then( data => {
-            setNotifications(data.notifications)
-            setHasUnread(data.hasUnread)
-            const latest = data.latest - 1
-            setLatestMessage(data.notifications[latest].message)
-        })
+        setFirstName(userMock.firstName),
+        setLastName(userMock.lastName)
+        setNotifications(notificationsMock.notifications)
+        setHasUnread(notificationsMock.hasUnread)
+        const latest = notificationsMock.latest - 1
+        setLatestMessage(notificationsMock.notifications[latest].message)
     }
 
     useEffect(() => {
