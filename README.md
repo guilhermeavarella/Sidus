@@ -10,18 +10,18 @@ The project was created as a union of **three** different goals:
 - An early semester warmup;
 - A design challenge.
 
-## System architecture 
+## Application flow 
 <div align="center" >
     <img src="./media/application-flow.svg" width="500" />
 </div>
 
-## Application flow
+## System Architecture
 <div align="center" >
     <img src="./media/system-architecture.svg" width="400" />
 </div>
 
 
-> [!NOTE] Current status
+> [STATUS]
 > Sidus is a work in progress project, currently, featuring only the web emulation of the app's frontend.
 
   
